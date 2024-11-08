@@ -6,7 +6,7 @@ from colorama import Fore
 def get_ffmpeg_stream_info(file_path):
     # Comando que ejecuta ffmpeg para obtener información del archivo
     
-    # Si no esta instalado ffmpeg en el PATH se puede usar directamente la ruta donde se encuentre ffmpeg.exe
+    # Si no esta instalado ffmpeg en el PATH se puede usar directamente desde la ruta donde se encuentre ffmpeg.exe
     # command = ["C:\\ffmpeg\\bin\\ffmpeg.exe", "-i", file_path]
     
     # Si esta instalado lo llamamos directamente
@@ -66,6 +66,9 @@ def main():
     # Imprimir la información formateada
     for info in stream_info:
         print(info)
+
+    input("Presiona Enter para salir...")
+
 
 if __name__ == "__main__":
     main()
